@@ -22,14 +22,14 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
 			}}
 		>
 			<p
-				className={`mb-0 text-gray-800 font-semibold tracking-[0.05rem] ${
+				className={`mb-0 font-semibold tracking-[0.05rem] ${
 					index > 9 ? 'text-gray-300' : ''
 				}`}
 			>
 				{weight}%
 			</p>
 			<p
-				className={`mb-0 text-gray-800 font-semibold tracking-[0.05rem] ${
+				className={`mb-0 font-semibold tracking-[0.05rem] ${
 					index > 9 ? 'text-gray-300' : ''
 				}`}
 			>
