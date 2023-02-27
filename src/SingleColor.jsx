@@ -9,7 +9,7 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
 		const timeout = setTimeout(() => {
 			setAlert(false);
 		}, 3000);
-    return() => clearTimeout(timeout)
+		return () => clearTimeout(timeout);
 	}, [alert]);
 
 	return (
@@ -23,14 +23,14 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
 		>
 			<p
 				className={`mb-0 text-gray-800 font-semibold tracking-[0.05rem] ${
-					index > 10 ? 'text-gray-100' : ''
+					index > 10 ? 'text-white' : ''
 				}`}
 			>
 				{weight}%
 			</p>
 			<p
 				className={`mb-0 text-gray-800 font-semibold tracking-[0.05rem] ${
-					index > 10 ? 'text-gray-100' : ''
+					index > 10 ? 'text-white' : ''
 				}`}
 			>
 				{hexValue}
@@ -38,7 +38,7 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
 			{alert && (
 				<p
 					className={`mt-1 uppercase text-sm font-semibold tracking-[0.05rem] ${
-						index > 10 ? 'text-gray-100' : ''
+						index > 10 ? 'text-white' : ''
 					}`}
 				>
 					copied to clipboard! 👍
